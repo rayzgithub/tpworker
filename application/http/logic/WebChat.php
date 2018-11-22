@@ -44,6 +44,7 @@ class WebChat{
         $redis = UtilRedis::instance()->getRedis();
         $redis->select(0);
         $uuid = $user['uuid'];
+
         //将用户信息添加到群组中
         $user_json = $redis->get('group_users');
         $users = $user_json ? json_decode($user_json,true): [];
@@ -51,6 +52,10 @@ class WebChat{
             $users[$uuid] = $user;
         }
         $redis->set('group_users',json_encode($users,JSON_UNESCAPED_UNICODE));
+
+        //记录用户来访记录
+        $user['time'] = date('Y-m-d H:i:s');
+        $redis->rPush('all_user_log',json_encode($user,JSON_UNESCAPED_UNICODE));
         return count($users);
     }
 
