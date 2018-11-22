@@ -1,0 +1,288 @@
+2018-11-21 11:20:48 pid:1 exception 'think\exception\ErrorException' with message 'Array to string conversion' in E:\tpworker\application\http\Worker.php:76
+Stack trace:
+#0 E:\tpworker\application\http\Worker.php(76): think\Error::appError(8, 'Array to string...', 'E:\\tpworker\\app...', 76, Array)
+#1 E:\tpworker\application\http\Worker.php(31): app\http\Worker->sendToClient('connect', Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: app\http\Worker->onConnect(Object(Workerman\Connection\TcpConnection))
+#3 E:\tpworker\vendor\workerman\workerman\Worker.php(2388): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#4 [internal function]: Workerman\Worker->acceptConnection(Resource id #97)
+#5 E:\tpworker\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\tpworker\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\tpworker\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#8 E:\tpworker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\tpworker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\tpworker\vendor\topthink\think-worker\src\command\Server.php(75): Workerman\Worker::runAll()
+#11 E:\tpworker\thinkphp\library\think\console\Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#12 E:\tpworker\thinkphp\library\think\Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#13 E:\tpworker\thinkphp\library\think\Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#14 E:\tpworker\thinkphp\library\think\Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#15 E:\tpworker\thinkphp\library\think\Console.php(115): think\Console->run()
+#16 E:\tpworker\think(22): think\Console::init()
+#17 {main}
+2018-11-21 11:20:48 pid:1 Worker process terminated
+2018-11-21 15:45:43 pid:1 exception 'think\exception\ErrorException' with message 'Cannot use a scalar value as an array' in E:\tpworker\application\http\Worker.php:135
+Stack trace:
+#0 E:\tpworker\application\http\Worker.php(135): think\Error::appError(2, 'Cannot use a sc...', 'E:\\tpworker\\app...', 135, Array)
+#1 E:\tpworker\application\http\Worker.php(52): app\http\Worker->parseRequest(0)
+#2 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 0)
+#3 E:\tpworker\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 0)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#5 E:\tpworker\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\tpworker\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\tpworker\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#8 E:\tpworker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\tpworker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\tpworker\vendor\topthink\think-worker\src\command\Server.php(75): Workerman\Worker::runAll()
+#11 E:\tpworker\thinkphp\library\think\console\Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#12 E:\tpworker\thinkphp\library\think\Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#13 E:\tpworker\thinkphp\library\think\Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#14 E:\tpworker\thinkphp\library\think\Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#15 E:\tpworker\thinkphp\library\think\Console.php(115): think\Console->run()
+#16 E:\tpworker\think(22): think\Console::init()
+#17 {main}
+2018-11-21 15:45:43 pid:1 Worker process terminated
+2018-11-21 15:47:08 pid:1 exception 'think\exception\ErrorException' with message 'Cannot use a scalar value as an array' in E:\tpworker\application\http\Worker.php:136
+Stack trace:
+#0 E:\tpworker\application\http\Worker.php(136): think\Error::appError(2, 'Cannot use a sc...', 'E:\\tpworker\\app...', 136, Array)
+#1 E:\tpworker\application\http\Worker.php(52): app\http\Worker->parseRequest(0)
+#2 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 0)
+#3 E:\tpworker\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 0)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#5 E:\tpworker\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\tpworker\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\tpworker\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#8 E:\tpworker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\tpworker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\tpworker\vendor\topthink\think-worker\src\command\Server.php(75): Workerman\Worker::runAll()
+#11 E:\tpworker\thinkphp\library\think\console\Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#12 E:\tpworker\thinkphp\library\think\Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#13 E:\tpworker\thinkphp\library\think\Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#14 E:\tpworker\thinkphp\library\think\Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#15 E:\tpworker\thinkphp\library\think\Console.php(115): think\Console->run()
+#16 E:\tpworker\think(22): think\Console::init()
+#17 {main}
+2018-11-21 15:47:08 pid:1 Worker process terminated
+2018-11-21 15:47:46 pid:1 exception 'think\exception\ErrorException' with message 'Cannot use a scalar value as an array' in E:\tpworker\application\http\Worker.php:137
+Stack trace:
+#0 E:\tpworker\application\http\Worker.php(137): think\Error::appError(2, 'Cannot use a sc...', 'E:\\tpworker\\app...', 137, Array)
+#1 E:\tpworker\application\http\Worker.php(53): app\http\Worker->parseRequest(0)
+#2 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), 0)
+#3 E:\tpworker\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), 0)
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #102)
+#5 E:\tpworker\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#6 E:\tpworker\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#7 E:\tpworker\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#8 E:\tpworker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#9 E:\tpworker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#10 E:\tpworker\vendor\topthink\think-worker\src\command\Server.php(75): Workerman\Worker::runAll()
+#11 E:\tpworker\thinkphp\library\think\console\Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#12 E:\tpworker\thinkphp\library\think\Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#13 E:\tpworker\thinkphp\library\think\Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#14 E:\tpworker\thinkphp\library\think\Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#15 E:\tpworker\thinkphp\library\think\Console.php(115): think\Console->run()
+#16 E:\tpworker\think(22): think\Console::init()
+#17 {main}
+2018-11-21 15:47:46 pid:1 Worker process terminated
+2018-11-21 15:53:31 pid:1 exception 'RedisException' with message 'Redis server went away' in E:\tpworker\application\http\lib\UtilRedis.php:32
+Stack trace:
+#0 E:\tpworker\application\http\lib\UtilRedis.php(32): Redis->auth('')
+#1 E:\tpworker\application\http\logic\WebChat.php(17): app\http\lib\UtilRedis->getRedis()
+#2 E:\tpworker\application\http\Worker.php(191): app\http\logic\WebChat::saveUserInfo('sdasfdasrtsaes', Array)
+#3 E:\tpworker\application\http\Worker.php(60): app\http\Worker->initUser(Object(Workerman\Connection\TcpConnection), Array)
+#4 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), '{"action":"init...')
+#5 E:\tpworker\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"action":"init...')
+#6 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #114)
+#7 E:\tpworker\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#8 E:\tpworker\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#9 E:\tpworker\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#10 E:\tpworker\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#11 E:\tpworker\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#12 E:\tpworker\vendor\topthink\think-worker\src\command\Server.php(75): Workerman\Worker::runAll()
+#13 E:\tpworker\thinkphp\library\think\console\Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#14 E:\tpworker\thinkphp\library\think\Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#15 E:\tpworker\thinkphp\library\think\Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#16 E:\tpworker\thinkphp\library\think\Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#17 E:\tpworker\thinkphp\library\think\Console.php(115): think\Console->run()
+#18 E:\tpworker\think(22): think\Console::init()
+#19 {main}
+2018-11-21 15:53:31 pid:1 Worker process terminated
+2018-11-21 16:03:01 pid:1 Worker process terminated with ERROR: E_ERROR "Call to a member function send() on array in E:\tpworker\application\http\Worker.php on line 108"
+2018-11-21 17:18:17 pid:68942 Workerman[think] start in DEBUG mode
+2018-11-21 17:54:42 pid:68942 Workerman[think] stopping ...
+2018-11-21 17:54:42 pid:68943 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$uuid in /home/wwwroot/tpworker/application/http/Worker.php:83
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/Worker.php(83): think\Error::appError(8, 'Undefined prope...', '/home/wwwroot/t...', 83, Array)
+#1 [internal function]: app\http\Worker->onClose(Object(Workerman\Connection\TcpConnection))
+#2 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(934): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#3 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(837): Workerman\Connection\TcpConnection->destroy()
+#4 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2348): Workerman\Connection\TcpConnection->close()
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1761): Workerman\Worker->stop()
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1083): Workerman\Worker::stopAll()
+#7 [internal function]: Workerman\Worker::signalHandler(2)
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(169): call_user_func_array(Array, Array)
+#9 [internal function]: Workerman\Events\Select->signalHandler(2, Array)
+#10 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(268): pcntl_signal_dispatch()
+#11 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#12 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#13 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#14 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#15 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#16 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#17 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#18 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#19 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#20 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#21 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#22 /home/wwwroot/tpworker/think(22): think\Console::init()
+#23 {main}
+2018-11-21 17:54:42 pid:68942 worker[none:68943] exit with status 64000
+2018-11-21 17:54:42 pid:68942 Workerman[think] has been stopped
+2018-11-21 17:57:08 pid:71387 Workerman[think] start in DEBUG mode
+2018-11-21 17:58:46 pid:71388 Error: Class 'Redis' not found in /home/wwwroot/tpworker/application/http/lib/UtilRedis.php:30
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/logic/WebChat.php(31): app\http\lib\UtilRedis->getRedis()
+#1 /home/wwwroot/tpworker/application/http/Worker.php(89): app\http\logic\WebChat::getUserInfo(NULL)
+#2 [internal function]: app\http\Worker->onClose(Object(Workerman\Connection\TcpConnection))
+#3 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(934): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#4 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(837): Workerman\Connection\TcpConnection->destroy()
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Protocols/Websocket.php(105): Workerman\Connection\TcpConnection->close('\x88\x02'\x10', true)
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('\x88\x82H\xC0\x01\x04K)', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #106)
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#10 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#14 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#15 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#16 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#17 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#18 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#19 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#20 /home/wwwroot/tpworker/think(22): think\Console::init()
+#21 {main}
+2018-11-21 17:58:46 pid:71388 Worker[71388] process terminated
+2018-11-21 17:58:46 pid:71387 worker[none:71388] exit with status 64000
+2018-11-21 17:58:57 pid:71502 Error: Class 'Redis' not found in /home/wwwroot/tpworker/application/http/lib/UtilRedis.php:30
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/logic/WebChat.php(31): app\http\lib\UtilRedis->getRedis()
+#1 /home/wwwroot/tpworker/application/http/Worker.php(89): app\http\logic\WebChat::getUserInfo(NULL)
+#2 [internal function]: app\http\Worker->onClose(Object(Workerman\Connection\TcpConnection))
+#3 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(934): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#4 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(837): Workerman\Connection\TcpConnection->destroy()
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Protocols/Websocket.php(105): Workerman\Connection\TcpConnection->close('\x88\x02'\x10', true)
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('\x88\x82_\xD2)\xF3\\;', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #107)
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#10 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#17 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#18 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#19 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#20 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#21 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#22 /home/wwwroot/tpworker/think(22): think\Console::init()
+#23 {main}
+2018-11-21 17:58:57 pid:71502 Worker[71502] process terminated
+2018-11-21 17:58:57 pid:71387 worker[none:71502] exit with status 64000
+2018-11-21 18:32:04 pid:71514 Error: Class 'Redis' not found in /home/wwwroot/tpworker/application/http/lib/UtilRedis.php:30
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/logic/WebChat.php(31): app\http\lib\UtilRedis->getRedis()
+#1 /home/wwwroot/tpworker/application/http/Worker.php(89): app\http\logic\WebChat::getUserInfo(NULL)
+#2 [internal function]: app\http\Worker->onClose(Object(Workerman\Connection\TcpConnection))
+#3 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(934): call_user_func(Array, Object(Workerman\Connection\TcpConnection))
+#4 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(837): Workerman\Connection\TcpConnection->destroy()
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Protocols/Websocket.php(105): Workerman\Connection\TcpConnection->close('\x88\x02'\x10', true)
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(621): Workerman\Protocols\Websocket::input('\x88\x82\xD5\xD0\xA3}\xD69', Object(Workerman\Connection\TcpConnection))
+#7 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #108)
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#9 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#10 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#11 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#12 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#13 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1586): Workerman\Worker::forkWorkers()
+#14 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1535): Workerman\Worker::monitorWorkersForLinux()
+#15 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(509): Workerman\Worker::monitorWorkers()
+#16 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#17 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#18 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#19 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#20 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#21 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#22 /home/wwwroot/tpworker/think(22): think\Console::init()
+#23 {main}
+2018-11-21 18:32:04 pid:71514 Worker[71514] process terminated
+2018-11-21 18:32:05 pid:71387 worker[none:71514] exit with status 64000
+2018-11-22 09:56:42 pid:5054 Workerman[think] restart 
+2018-11-22 09:56:42 pid:5054 Workerman[think] is stopping ...
+2018-11-22 09:56:42 pid:5054 Workerman[think] stop success
+2018-11-22 10:20:14 pid:5055 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$uuid in /home/wwwroot/tpworker/application/http/Worker.php:230
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/Worker.php(230): think\Error::appError(8, 'Undefined prope...', '/home/wwwroot/t...', 230, Array)
+#1 /home/wwwroot/tpworker/application/http/Worker.php(63): app\http\Worker->msgAll(Object(Workerman\Connection\TcpConnection), Array)
+#2 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#3 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"action":"msg_...')
+#4 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #360)
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#7 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#9 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#10 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#11 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#12 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#13 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#14 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#15 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#16 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#17 /home/wwwroot/tpworker/think(22): think\Console::init()
+#18 {main}
+2018-11-22 10:20:14 pid:5055 Worker[5055] process terminated
+2018-11-22 10:20:14 pid:5054 worker[none:5055] exit with status 64000
+2018-11-22 10:34:36 pid:5054 Workerman[think] stopping ...
+2018-11-22 10:34:36 pid:5054 Workerman[think] has been stopped
+2018-11-22 10:34:38 pid:7444 Workerman[think] restart 
+2018-11-22 10:34:38 pid:7444 Workerman[think] is stopping ...
+2018-11-22 10:34:38 pid:7444 Workerman[think] stop success
+2018-11-22 10:34:55 pid:7445 think\exception\ErrorException: Undefined property: Workerman\Connection\TcpConnection::$uuid in /home/wwwroot/tpworker/application/http/Worker.php:63
+Stack trace:
+#0 /home/wwwroot/tpworker/application/http/Worker.php(63): think\Error::appError(8, 'Undefined prope...', '/home/wwwroot/t...', 63, Array)
+#1 [internal function]: app\http\Worker->onMessage(Object(Workerman\Connection\TcpConnection), Array)
+#2 /home/wwwroot/tpworker/vendor/workerman/workerman/Connection/TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"action":"msg_...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #108)
+#4 /home/wwwroot/tpworker/vendor/workerman/workerman/Events/Select.php(294): call_user_func_array(Array, Array)
+#5 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(2321): Workerman\Events\Select->loop()
+#6 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1452): Workerman\Worker->run()
+#7 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1282): Workerman\Worker::forkOneWorkerForLinux(Object(Workerman\Worker))
+#8 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(1256): Workerman\Worker::forkWorkersForLinux()
+#9 /home/wwwroot/tpworker/vendor/workerman/workerman/Worker.php(507): Workerman\Worker::forkWorkers()
+#10 /home/wwwroot/tpworker/vendor/topthink/think-worker/src/command/Server.php(75): Workerman\Worker::runAll()
+#11 /home/wwwroot/tpworker/thinkphp/library/think/console/Command.php(175): think\worker\command\Server->execute(Object(think\console\Input), Object(think\console\Output))
+#12 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(670): think\console\Command->run(Object(think\console\Input), Object(think\console\Output))
+#13 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(261): think\Console->doRunCommand(Object(think\worker\command\Server), Object(think\console\Input), Object(think\console\Output))
+#14 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(198): think\Console->doRun(Object(think\console\Input), Object(think\console\Output))
+#15 /home/wwwroot/tpworker/thinkphp/library/think/Console.php(115): think\Console->run()
+#16 /home/wwwroot/tpworker/think(22): think\Console::init()
+#17 {main}
+2018-11-22 10:34:55 pid:7445 Worker[7445] process terminated
+2018-11-22 10:34:55 pid:7444 worker[none:7445] exit with status 64000
+2018-11-22 10:49:10 pid:7444 Workerman[think] stopping ...
+2018-11-22 10:49:10 pid:7444 Workerman[think] has been stopped
+2018-11-22 10:49:14 pid:8335 Workerman[think] stop 
+2018-11-22 10:49:14 pid:8335 Workerman[think] not run
+2018-11-22 11:13:36 pid:9834 Workerman[think] start in DEBUG mode
+2018-11-22 12:57:46 pid:9834 Workerman[think] stopping ...
+2018-11-22 12:57:46 pid:9834 Workerman[think] has been stopped
+2018-11-22 12:57:47 pid:16224 Workerman[think] start in DEBUG mode
+2018-11-22 13:07:02 pid:16224 Workerman[think] stopping ...
+2018-11-22 13:07:02 pid:16224 Workerman[think] has been stopped
+2018-11-22 13:07:04 pid:16801 Workerman[think] start in DEBUG mode
+2018-11-22 13:16:32 pid:16801 Workerman[think] stopping ...
+2018-11-22 13:16:32 pid:16801 Workerman[think] has been stopped
+2018-11-22 13:16:49 pid:17396 Workerman[think] start in DEBUG mode
